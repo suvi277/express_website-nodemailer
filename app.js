@@ -28,13 +28,13 @@ app.post('/contact/send', function(req, res){
 	var transporter = nodemailer.createTransport({
 		service: 'Gmail',
 		auth: {
-			user: 'your@email.com',
-			pass: 'password'
+			user: 'suvarnamondal27@gmail.com',
+			pass: 'E149YA@54'
 		}
 	});
 
 	var mailOptions = {
-		from: 'Brad Traversy <techguyinfo@gmail.com>',
+		from: 'Suvarna Mondal <suvarnamondal27@gmail.com>',
 		to: 'support@joomdigi.com',
 		subject: 'Website Submission',
 		text: 'You have a submission with the following details... Name: '+req.body.name+'Email: '+req.body.email+ 'Message: '+req.body.message,
